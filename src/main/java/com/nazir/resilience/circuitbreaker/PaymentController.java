@@ -10,11 +10,9 @@ public class PaymentController {
 
     @GetMapping
     public String payment() {
-
         if (Math.random() > 0.5) {
             throw new RuntimeException("Payment service failed");
         }
-
         return "Payment Success";
     }
 }

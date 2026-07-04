@@ -34,17 +34,11 @@ public class TokenBucket {
     private void refill() {
 
         long now = System.currentTimeMillis();
-
         long elapsed = now - lastRefillTime;
-
         if (elapsed >= refillIntervalMs) {
-
             long intervals = elapsed / refillIntervalMs;
-
             int newTokens = (int) (intervals * refillTokens);
-
             tokens = Math.min(capacity, tokens + newTokens);
-
             lastRefillTime = now;
         }
     }

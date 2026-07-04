@@ -10,9 +10,7 @@ public class PaymentService {
     private final Semaphore semaphore = new Semaphore(2);
 
     public String processPayment() {
-
         boolean acquired = semaphore.tryAcquire();
-
         if (!acquired) {
             return "Server Busy";
         }
