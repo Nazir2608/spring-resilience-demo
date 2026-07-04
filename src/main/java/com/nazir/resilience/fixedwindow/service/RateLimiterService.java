@@ -1,4 +1,4 @@
-package com.nazir.resilience.service;
+package com.nazir.resilience.fixedwindow.service;
 
 import org.springframework.stereotype.Service;
 

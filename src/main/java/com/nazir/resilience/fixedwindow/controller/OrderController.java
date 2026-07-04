@@ -1,6 +1,6 @@
-package com.nazir.resilience.controller;
+package com.nazir.resilience.fixedwindow.controller;
 
-import com.nazir.resilience.service.RateLimiterService;
+import com.nazir.resilience.fixedwindow.service.RateLimiterService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
